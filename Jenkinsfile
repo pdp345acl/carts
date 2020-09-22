@@ -83,7 +83,8 @@ stage('DT Deploy Event') {
           tagRule : tagMatchRules,
           customProperties : [
             [key: 'Jenkins Build Number', value: "${env.BUILD_ID}"],
-            [key: 'Git commit', value: "${env.GIT_COMMIT}"]
+            [key: 'Git commit', value: "${env.GIT_COMMIT}"],
+            [key: 'last to finish steps', value: "Izaan"]
           ]
         )
       }
